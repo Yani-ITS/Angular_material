@@ -1,0 +1,23 @@
+.container h1{
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  text-shadow:4px violet
+}
+
+.container p{
+  font-size: medium;
+  color: black;
+}
+.container{
+  background-color: lavender;
+}
+
+.container image{
+  width: 100%;
+}
+.titulo{
+  color: blueviolet;
+  font-weight: bolder;
+}

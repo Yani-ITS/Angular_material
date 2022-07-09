@@ -1,1 +1,49 @@
-<p>inicio works!</p>
+<div class="container fluid col-10">
+  <h1 class="text-center mt-2">
+    Bienvenido a Yani Beautynails!!
+  </h1>
+  <br>
+  <br>
+  <p class="text-center">Acá encontraras turnos, asesoría y tus productos favoritos</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6 bg-dark">
+      <h3> Consulta turnos disponibles: </h3>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Elegi el día: </mat-label>
+        <input matInput [matDatepickerFilter]='myFilter' [matDatepicker]="picker">
+        <mat-hint></mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <div class="form-group col-3 mb-2">
+        <label class="col-7 ms-2 mt-2" for="inputSmall">Horario que buscas?:</label>
+        <input class="form-control form-control-sm" type="text" placeholder="12:30" id="inputSmall">
+      </div>
+      <mat-form-field appearance="fill">
+        <mat-label>Servicios</mat-label>
+        <mat-select multiple>
+          <mat-option *ngFor="let servicios of lista_servicios" [value]="servicios">{{servicios}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="form-group mt-1 col-4">
+        <label for="exampleInputEmail1" class="form-label mt-1">Teléfono de Contacto</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="299 4139275">
+        <small id="emailHelp" class="form-text text-muted">Tus datos están seguros.</small>
+      </div>
+      <div class="example-button-row mt-2">
+        <button mat-raised-button color="primary">Enviar</button>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="titulo">
+        <h3> Visitame en Instagram</h3>
+        <a href="https://www.instagram.com/yani.beautynails/"> @yani.beautynails</a>
+      </div>
+    </div>
+  </div>
+</div>

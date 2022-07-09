@@ -1,0 +1,14 @@
+.container h2{
+  font-size: large;
+  background-color: black
+}
+.container p{
+  font-size: medium;
+  background-color: lightgrey;
+  color: black;
+}
+
+.container img{
+  width: 65%;
+
+}

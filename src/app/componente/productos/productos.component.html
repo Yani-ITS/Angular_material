@@ -1,1 +1,14 @@
-<p>productos works!</p>
+
+
+<div class="row pt-5 ms-2 me-2 mt-1">
+  <mat-card class="example-card" *ngFor="let esmalte of esmaltes">
+    <mat-card-title-group *ngIf="esmalte.disponibilidad">
+      <mat-card-title>{{esmalte.nombre}}</mat-card-title>
+      <mat-card-subtitle> $ {{esmalte.precio}}</mat-card-subtitle>
+      <img mat-card-md-image [src]="esmalte.url">
+    </mat-card-title-group>
+    <mat-card-content>
+      <p>{{esmalte.descripcion}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
