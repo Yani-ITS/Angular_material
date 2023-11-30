@@ -1,6 +1,6 @@
 import { formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms'
+import { UntypedFormControl } from '@angular/forms'
 
 @Component({
   selector: 'app-inicio',
@@ -15,7 +15,7 @@ export class InicioComponent implements OnInit {
     return day !== 0 && day !== 6;
   }
 
-  service = new FormControl('')
+  service = new UntypedFormControl('')
   lista_servicios= ['Capping', 'Soft Gel', 'Belleza de Pies', 'Podocosmiatría'];
 
   constructor() { }
